@@ -9,8 +9,7 @@ def hello(name,name2):
   return render_template('hello.html', name=name, name2=name2)
 
 if __name__ == 'main':
-  app.run(debug=True) 
-  #FIXME: to be updated.
-  #TODO:
+  app.run(host='0.0.0.0')
+ 
   # debug true задаем специально для разработки (в данном случае при обновление/изменение
   # кода приложение автоматически само обновит данные на сайте)
